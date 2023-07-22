@@ -170,3 +170,14 @@ Undefined != null
 
 let kosong 
 console.log(kosong) // undefined
+
+
+/*
+ null
+ **********************
+Merupakan representasi data kosong
+null berbeda dengan undefined. null berarti variable sudah di tambahkan valuenya, hanya saja valur nya null
+*/
+
+kosong = null
+console.log(kosong) // null

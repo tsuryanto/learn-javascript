@@ -158,3 +158,15 @@ console.log(chelsea.color) // blue
 // delete object atribute
 delete chelsea["manager"]
 console.log(chelsea.manager) // undefined
+
+
+/*
+ Tipe Data undefined
+ **********************
+Adalah kata kunci dan tipe data di Javascript
+Sebuah variable yang belum ditambahkan nilai, maka tipe data dari variabel tersebut adalah undefined
+Undefined != null
+*/
+
+let kosong 
+console.log(kosong) // undefined

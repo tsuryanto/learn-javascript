@@ -101,3 +101,35 @@ console.log(nan + "hihi") // NaNhihi
 
 // mengecek apakan NaN
 console.log(isNaN(nan)) // true
+
+/*
+ Tipe Data Array
+ **********************
+Array di javascript dinamis, size array bertambah dengan sendirinya jika kita memasukkan data ke dalam array
+
+array.length -> untuk mendapatkan panjang array
+delete array[index] -> menghapus data di posisi index, tetapi index tidak bergeser
+                       lenth index setelah index dihapus tetap sama
+*/
+
+let arraykosong = []
+let arrayOfName = ["Taufiq", "Suryanto"]
+console.log(arrayOfName)
+
+// menambah data array (akan dimasukkan di index terakhir)
+arrayOfName.push("John")
+
+// memasukkan array ke index array, bisa beda tipe data
+angka = [1, 2.567]
+arrayOfName.push(angka)
+
+// menambahkan multiple index
+arrayOfName.push("Nicola", "Tesla")
+
+console.table(arrayOfName)
+console.log()
+
+// delete array index
+delete arrayOfName[4]
+console.table(arrayOfName)
+console.log(arrayOfName[4]) // undefined, karena index sudah di hapus

@@ -23,12 +23,12 @@ if (examValue == 100) {
 
 let nilai
 switch (nilai) {
-    case "A" : 
+    case "A":
         console.log("Excellent")
         break
-    case "B" :
+    case "B":
         console.log("Good")
         break
-    default : 
+    default:
         console.log("nilai tidak ditemukan") // <- here
 }

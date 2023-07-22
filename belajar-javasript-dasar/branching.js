@@ -12,3 +12,23 @@ if (examValue == 100) {
 } else {
     console.log("Keep learn and learn")
 }
+
+/*
+ Switch expression
+ **********************
+ Sama dengan IF, namun lebih sederhana 
+ Akan di eksekusi terus jika tidak ada break
+ Jika tidak ditemukan break, data akan di eeksekusi hingga ke bawah
+*/
+
+let nilai
+switch (nilai) {
+    case "A" : 
+        console.log("Excellent")
+        break
+    case "B" :
+        console.log("Good")
+        break
+    default : 
+        console.log("nilai tidak ditemukan") // <- here
+}

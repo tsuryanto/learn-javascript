@@ -110,6 +110,9 @@ Array di javascript dinamis, size array bertambah dengan sendirinya jika kita me
 array.length -> untuk mendapatkan panjang array
 delete array[index] -> menghapus data di posisi index, tetapi index tidak bergeser
                        lenth index setelah index dihapus tetap sama
+
+Di javascript Associative Array tidak di dukung.
+di javascript index array tidak bisa diganti dengan string (seperti di PHP)                       
 */
 
 let arraykosong = []
@@ -133,3 +136,25 @@ console.log()
 delete arrayOfName[4]
 console.table(arrayOfName)
 console.log(arrayOfName[4]) // undefined, karena index sudah di hapus
+
+
+/*
+ Tipe Data Object
+ **********************
+object memiliki atribut/properties
+*/
+
+const objectKosong = {}
+const chelsea = {
+    "club_name" : "Chelsea",
+    "color": "blue",
+    "main_stadium": "Stanford Bridge",
+    "year": 1905
+}
+chelsea["manager"] = "Mauricio Pachettino"
+console.log(chelsea)
+console.log(chelsea.color) // blue
+
+// delete object atribute
+delete chelsea["manager"]
+console.log(chelsea.manager) // undefined

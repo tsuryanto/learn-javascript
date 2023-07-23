@@ -181,3 +181,26 @@ null berbeda dengan undefined. null berarti variable sudah di tambahkan valuenya
 
 kosong = null
 console.log(kosong) // null
+
+
+/*
+ typeOf
+ **********************
+ merupakan operator yang bisa kita gunakan untuk melihat tipe data sebuah value atau variable
+ hasil dari type off adalah string tipe data nya
+
+Undefined -> "undefined"
+Null -> ""object"
+Boolean -> "boolean"
+Number -> "number"
+BigInt -> "bigint"
+String -> "string"
+Symbol -> "symbol"
+Function -> "function"
+Lainnya -> "object"
+ */
+
+let sisi = "8"
+if (typeof(sisi) == "string") {
+    console.log(parseInt(sisi)) // 8
+}

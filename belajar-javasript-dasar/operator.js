@@ -31,5 +31,3 @@ console.log("compare 1 with 1.0" , 1 === 1.0) // true, karena sama-sama number
 */
 
  console.log(1 == 1 && 2 == 2) //  true 
-
- 

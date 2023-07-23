@@ -71,3 +71,23 @@ console.log(myData) // "Data bta Kosong"
 param = 1
 myData = param ?? "Data nya kosong"
 console.log(myData) // 1
+
+
+ /*
+ Optional Chaining
+ **********************
+ Ini juga digunakan untuk handling data null dan undefined (data nullish)
+ Optional Chaining merupakan operator yang digunakan untuk mengamankan ketika hendak mengakses data nullish
+ Jika kita mengakses data nullish tanpa menggunakan optional chaining, maka akan terjadi error
+*/
+
+// Contoh error
+let orang = {}
+// console.log(orang.address.city) // error
+// console.log("Karena kode diatas error, ini gk akan di eksekusi")
+
+// contoh optional chaining (aman dari error seperti diatas)
+console.log(orang?.address?.city) // undefined
+console.log(orang?.address?.city ?? "gak ketemu") // gak ketemu
+
+

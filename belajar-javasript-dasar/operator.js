@@ -31,3 +31,26 @@ console.log("compare 1 with 1.0" , 1 === 1.0) // true, karena sama-sama number
 */
 
  console.log(1 == 1 && 2 == 2) //  true 
+
+
+ /*
+ In Operator
+ **********************
+ Untuk mengecek apakah sebuah property ada di dalam object atau tidak
+ Selain itu bisa juga untuk mengecek index of Array
+ output nya berupa boolean (true / false)
+
+ **!!!!**  Peringatan : 
+  In Operator hanya akan mengecek apakah sebuah property atau index ada atau tidak
+  jadi walaupunn nilai property atau index nya undefined atau null, maka tetap akan dianggap ada
+*/
+
+const person = {
+    "name" : "Taufiq",
+    "gender": "male"
+}
+console.log(`Is has name : ${"name" in person}`) // true
+
+const bil = [1,2,3]
+delete bil[1]
+console.log(`arr ${bil}, is index 1 exist : ${1 in bil}`) // false

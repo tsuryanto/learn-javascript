@@ -54,3 +54,20 @@ console.log(`Is has name : ${"name" in person}`) // true
 const bil = [1,2,3]
 delete bil[1]
 console.log(`arr ${bil}, is index 1 exist : ${1 in bil}`) // false
+
+
+ /*
+ Nullish Coalescing Operator
+ **********************
+Nullist value adalah null dan undefined
+Nullish Coalescing Operator (??) adalah operator untuk menandakan jika bernilai null atau undefined, baru value default nya diambil.
+Dengan kata lain ini digunakan untuk handling data null dan undefined
+*/
+
+let param
+let myData = param ?? "Data nya Kosong"
+console.log(myData) // "Data bta Kosong"
+
+param = 1
+myData = param ?? "Data nya kosong"
+console.log(myData) // 1

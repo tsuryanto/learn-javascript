@@ -204,3 +204,46 @@ let sisi = "8"
 if (typeof(sisi) == "string") {
     console.log(parseInt(sisi)) // 8
 }
+
+
+/*
+ Falsy
+ **********************
+ adalah value yang ketika dalam konteks boolean, dia dianggap false
+ Ini adalah salah  satu fitur unik di javascript yang berguna namunn terkadang membingungkan
+
+ Data Falsy : 
+ false
+ 0 atau -0 atau 0.0
+ "" atau '' atau ``
+ null
+ undefined
+ NaN
+
+
+ !!! array kosong [] tetap dianggap true yaa 
+ */
+
+ if (!(0.0)) {
+    console.log("wkwkw")
+ }
+
+ 
+/*
+ Truethy
+ **********************
+Kebalikannya dari Falsy
+array kosong tetap dianggap true yaa
+ */
+
+const martabak = "Martabak" 
+if (martabak) {
+    console.log("martabak Beli lah !!" ) // <- here
+}
+
+let arrKosong = []
+if (!arrKosong) {
+    console.log("Mundur aja")
+} else {
+    console.log("Majuuu") // <- here
+}

@@ -32,3 +32,13 @@ switch (nilai) {
     default:
         console.log("nilai tidak ditemukan") // <- here
 }
+
+/*
+ ternary operator
+ **********************
+ Adalah operator sederhana dari if statement
+*/
+
+const n = 80
+console.log(`status : ${n >= 75 ? "lulus" : "tidak lulus"}`)
+

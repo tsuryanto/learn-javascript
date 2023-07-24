@@ -91,3 +91,42 @@ console.log(orang?.address?.city) // undefined
 console.log(orang?.address?.city ?? "gak ketemu") // gak ketemu
 
 
+ /*
+ Operator Logika di non boolean
+ **********************
+
+1. Operator Logika OR 
+- Membaca dari kiri ke kanan
+- Operator ini akan mengambil nilai pertama yang truthy
+- Jika tidak ada satupun yang bernilai truthy, maka yang terakhir yang akan diambil
+Cocok ketika , kita ingin mengambil variabel A, namun jika falsy akan mengambol vvariabel B 
+*/
+
+console.log("hello" || "") // hello -> karena truthy nya hello
+console.log("" || []) // [] -> karena "" falsy, sedangkan [] truthy
+
+// ketika keduanya truthy yg diambil yg pernama dari kiri 
+console.log("0" || "NOL") // 0 -> karena string "0" truthy, 
+console.log(0 || "ini" || null) // ini -> karena "ini" adalah yg pertama truthy dari kiri
+
+// jika keduanya falsy, maka yg diambil falsy yg terakhir
+console.log(0 || undefined) // undefined 
+
+const student = {
+  firstName: "",
+  lastName: "Suryanto"
+} 
+console.log(student.firstName || student.lastName) // Suryanto
+
+
+/*
+1. Operator Logika AND 
+- Membaca dari kiri ke kanan
+- Operator ini akan mengambil nilai pertama yang falsy
+- Jika tidak ada satupun yang bernilai falsy, maka yang terakhir yang akan diambil
+Bisa dibilang ini kebalikan dari operaor OR non boolean
+*/
+
+console.log("hello" && "") // "" , karena "" adalah falsy pertama
+console.log("O" && "N") // N , karena tidak ada yg falsy maka yg terakhir (paling kanan) yg diambil
+

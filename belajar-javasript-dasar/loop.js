@@ -50,5 +50,31 @@ let c = 1
 do {
     console.log(c)
     c++
+
+    if (c == 5) {
+        continue
+    }
 }
 while (c <= 10)
+
+ /*
+ Label
+ **********************
+Contoh case : 
+biasanya jika kita membuat nested loop, ketika mengunakan break /continue, yang akan berdampak hanya pengulangan di tempaat break/continue itu dipanggil,
+untuk meem-break juga loop terluar nya atau parent loop nya, bisa menggunaan label
+setelah dicoba : hanya bisa digunaan di dalam pengulangan
+*/
+
+loopi:
+for (let i = 0; i < 3; i++) {
+    loopj:
+    for (let j = 0; j < 10; j++) {
+        if (j > 3) {
+            continue loopi
+        }
+        console.log(i + " - " + j)
+    }
+}
+
+

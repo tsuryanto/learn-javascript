@@ -78,3 +78,19 @@ for (let i = 0; i < 3; i++) {
 }
 
 
+ /*
+ For In
+ **********************
+merupakan perulangan for yamg digunakan untukk mengiterasi seluruh data property di object atau index di array
+Walaupun bisa digunakan untuk array, namun tidak di rekomendasikan karena biasanya kita jarang sekali butuh data index untuk array.
+Untuk array, kita bisa menggunakan for Of 
+*/
+
+const mahasiswa = {
+    "name" : "Taufiq",
+    "faculty" : "computer science"
+}
+
+for (m in mahasiswa) {
+    console.log(m)
+}

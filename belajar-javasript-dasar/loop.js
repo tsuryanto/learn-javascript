@@ -94,3 +94,15 @@ const mahasiswa = {
 for (m in mahasiswa) {
     console.log(m)
 }
+
+ /*
+ For Of
+ **********************
+For of digunakan untukk melakukan iterasi terhadap isi alue dari iterable object, seperti array string, dan lain-lain.
+bebeda dengan for In, For of tidak bisa digunakan untuk melakukan iterasi data di object karena object bukanlah iterable.
+*/
+
+ const buah = ["mangga", "apel", "pepaya"]
+ for (b of buah) {
+    console.log(b)
+ }

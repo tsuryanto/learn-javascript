@@ -106,3 +106,23 @@ bebeda dengan for In, For of tidak bisa digunakan untuk melakukan iterasi data d
  for (b of buah) {
     console.log(b)
  }
+
+  /*
+ with
+ **********************
+Digunakan untuk menurunkkan sebuah scope data.
+Denggan menggunakan with statement, kita bisa mengakses property dalam sebuah data tannpa harus menyebut datanya,
+
+!! WITH statement tidak direkomendasikan !!
+karena with statement kadang membuat sebuah kode menjadi ambigu
+*/
+
+const laptop = {
+    "name" : "Acer",
+    "type" : "E14"
+}
+
+with (laptop) {
+    console.log(name)
+    console.log(type)
+}
